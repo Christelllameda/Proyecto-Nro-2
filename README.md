@@ -1,7 +1,7 @@
 <div align="center">
 
-# **Proyecto Nro 2 - Building mySQL Data-base** </div>
-![Imagen]([![image-87.webp](https://i.postimg.cc/JnxfCpBM/image-87.webp)](https://postimg.cc/xJkxKyR4))
+![Proyecto Nro 2 - Building mySQL Data-base](https://i.postimg.cc/JnxfCpBM/image-87.webp)
+
 
 ---
 
