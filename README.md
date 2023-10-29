@@ -8,13 +8,27 @@
 </div>
 
 # Introducción
-He basado mi limpieza de datos para saber cuál era el país con mas ataques de tiburones en un rango entre 15 y 60 años de edad y la estación del año en la que eran mas frecuentes.
+Este proyecto tiene como objetivo principal la creación de una base de datos utilizando SQL (Structured Query Language). 
+
+La base de datos servirá como un almacén centralizado de información, permitiendo el acceso, búsqueda y análisis de datos de manera eficaz. 
+
+Este proyecto abordará la definición de tablas, relaciones, índices y consultas SQL que cumplirán con las necesidades específicas de la organización. La creación de esta base de datos contribuirá a la toma de decisiones informadas y mejorará la eficiencia de la organización en la gestión de sus activos de datos."
 
 # Contenido
-
+- Data
+    - 
+    -
+- images: 
 
 
 # Objetivos
+El objetivo princinpal de la creación de esta base de datos y su posterior análisis, es demostrar si es rentable reabrir un videoclub. Para ello necesitaremos:
+
+Determinar el día que mas se alquilan películas.
+
+Definir cuál es la categoría de películas que mas se suelen alquilar
+
+Determinar el total de dinero de rentas de películas, obtenido en un día 
 
 
 # Conclusión
