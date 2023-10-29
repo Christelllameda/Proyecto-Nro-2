@@ -15,7 +15,7 @@ La base de datos servirá como un almacén centralizado de información, permiti
 Este proyecto abordará la definición de tablas, relaciones, índices y consultas SQL que cumplirán con las necesidades específicas de la organización. La creación de esta base de datos contribuirá a la toma de decisiones informadas y mejorará la eficiencia de la organización en la gestión de sus activos de datos."
 
 # Contenido
-- Data
+- [data](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data)
     - 
     -
 - images: 
@@ -26,10 +26,18 @@ El objetivo princinpal de la creación de esta base de datos y su posterior aná
 
 Determinar el día que mas se alquilan películas.
 
-Definir cuál es la categoría de películas que mas se suelen alquilar
+Definir cuál es la categoría de películas que mas se suelen alquilar.
 
-Determinar el total de dinero de rentas de películas, obtenido en un día 
+Determinar el total de dinero obtenido por rentas de películas en un día.
+
+# Exploración de datos
 
 
 # Conclusión
 
+SELECT o.category,SUM(f.rental_rate) AS max_rental_rate
+FROM film f
+JOIN old_hdd o ON f.title = o.title
+JOIN rental r ON f.rental_duration = r.rental_duration
+GROUP BY o.category
+ORDER BY max_rental_rate DESC;
