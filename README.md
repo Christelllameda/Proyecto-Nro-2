@@ -15,10 +15,14 @@ La base de datos servirá como un almacén centralizado de información, permiti
 Este proyecto abordará la definición de tablas, relaciones, índices y consultas SQL que cumplirán con las necesidades específicas de la organización. La creación de esta base de datos contribuirá a la toma de decisiones informadas y mejorará la eficiencia de la organización en la gestión de sus activos de datos."
 
 # Contenido
-- [data](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data)
-    - 
-    -
-- images: 
+- [data](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data):
+    - [cvs_originales](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data/csv_originales)
+    - [cvs_limpios](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data/csv_limpios)
+- [src](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src)
+    -[jupyter](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter)
+        -[Limpieza de datos](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter/Limpieza%20de%20datos)
+        -[Creación base de datos](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Base%20de%20datos.ipynb)
+- [imagen](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/imagen): 
 
 
 # Objetivos
