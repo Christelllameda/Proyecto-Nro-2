@@ -1,20 +1,20 @@
 <div align="center">
 
-# **Proyecto Nro 2 - Building mySQL Data-base** </div>
+# **📊🗃️Proyecto Nro 2 - Building mySQL Data-base** </div>
 ![Proyecto Nro 2 - Building mySQL Data-base](https://i.postimg.cc/JnxfCpBM/image-87.webp)
 
 
 ---
 </div>
 
-# Introducción
+## Introducción
 Este proyecto tiene como objetivo principal la creación de una base de datos utilizando SQL (Structured Query Language). 
 
 La base de datos servirá como un almacén centralizado de información, permitiendo el acceso, búsqueda y análisis de datos de manera eficaz. 
 
 Este proyecto abordará la definición de tablas, relaciones, índices y consultas SQL que cumplirán con las necesidades específicas de la organización. La creación de esta base de datos contribuirá a la toma de decisiones informadas y mejorará la eficiencia de la organización en la gestión de sus activos de datos."
 
-# Contenido
+## Contenido
 - [data](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data)
     - [cvs_originales](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data/csv_originales)
     - [cvs_limpios](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/data/csv_limpios)
@@ -25,7 +25,7 @@ Este proyecto abordará la definición de tablas, relaciones, índices y consult
 - [imagen](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/imagen)
 
 
-# Objetivos
+## Objetivos
 El objetivo principal de la creación de esta base de datos y su posterior análisis, es demostrar si es rentable reabrir un videoclub. Para ello necesitaremos:
 
 Determinar el día que mas se alquilan películas.
@@ -34,14 +34,21 @@ Definir cuál es la categoría de películas que mas se suelen alquilar.
 
 Determinar el total de dinero obtenido por rentas de películas en un día.
 
-# Exploración de datos
+## Exploración de datos
+En esta fase realizamos la detección y corrección de errores, así como la eliminación de valores nulos o duplicadoss que pueden tener un impacto negativo en la precisión y fiabilidad del análisis.
 
+Observé que la columna 'last_update' estaba presente en varias tablas, pero la información que contenía no era relevante así que la eliminé.
 
-# Conclusión
+En el archivo de 'rental' convertimos los valores de las columnas 'rental_date' y 'return_date' a un formato datetime para poder restarlos y conocer la cantidad de días que alquiló el cliente esa película, este valor lo guardamos en una nueva columna llamada 'rental_duration'
 
-SELECT o.category,SUM(f.rental_rate) AS max_rental_rate
-FROM film f
-JOIN old_hdd o ON f.title = o.title
-JOIN rental r ON f.rental_duration = r.rental_duration
-GROUP BY o.category
-ORDER BY max_rental_rate DESC;
+Además, añadí otra columna llamada 'day_of_week' que contiene el día de la semana que se alquiló la película (según la fecha almacenada en 'rental_date').
+
+En el archivo 'old_hdd' observé que tenía una columna 'category_id', decidí crear un diccionario para agregar una nueva columna llamada 'category' que según el id, asignaría la categoría correspondiente a la película. Todo esto basado según la información obtenida en el csv 'category'.
+
+En el archivo 'film'
+
+## Creación de base de datos
+Realicé la creación de la base de datos en sql desde python, para ello efectué la conexión al servidor para crear una nueva base de datos vacía a la que llamé 'movies'.
+Posteriormente ejecutamos la string de conexión para ir cargando los diferentes cvs, convertidos en dataframe, como tablas en mi base de datos 'movies'
+
+## Conclusión
