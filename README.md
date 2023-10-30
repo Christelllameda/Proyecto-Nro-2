@@ -34,7 +34,7 @@ Definir cuál es la categoría de películas que mas se suelen alquilar.
 
 Determinar el total de dinero obtenido por rentas de películas en un día.
 
-## Exploración de datos
+## Exploración y análisis de datos
 En esta fase realizamos la detección y corrección de errores, así como la eliminación de valores nulos o duplicadoss que pueden tener un impacto negativo en la precisión y fiabilidad del análisis.
 
 Observé que la columna 'last_update' estaba presente en varias tablas, pero la información que contenía no era relevante así que la eliminé.
@@ -45,10 +45,13 @@ Además, añadí otra columna llamada 'day_of_week' que contiene el día de la s
 
 En el archivo 'old_hdd' observé que tenía una columna 'category_id', decidí crear un diccionario para agregar una nueva columna llamada 'category' que según el id, asignaría la categoría correspondiente a la película. Todo esto basado según la información obtenida en el csv 'category'.
 
-En el archivo 'film'
+En el archivo 'film', eliminé la columna 'original_language' ya que era una columna con valores nulos, al igual que la columna 'release_year' que mostraba que todas las películas habían sido estrenadas en el 2006, por lo que procedí a eliminarla ya que no me aportaía información relevante para poder filtrar datos.
+Añadí una nueva columna 'total_rate', en ella almacené el resultado de la multiplicación de la columna 'rental_duration' con la columna 'rental_rate', para así obtener el costo total de ese alquiler.
 
 ## Creación de base de datos
 Realicé la creación de la base de datos en sql desde python, para ello efectué la conexión al servidor para crear una nueva base de datos vacía a la que llamé 'movies'.
-Posteriormente ejecutamos la string de conexión para ir cargando los diferentes cvs, convertidos en dataframe, como tablas en mi base de datos 'movies'
+
+Posteriormente ejecutamos la string de conexión para ir cargando los diferentes cvs, convertidos en dataframe, como tablas en mi base de datos 'movies'. Todo los códigos se encuentran descritos en el jupyter notebook 'base de datos'
+
 
 ## Conclusión
