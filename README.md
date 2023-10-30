@@ -22,7 +22,7 @@ Este proyecto abordará la definición de tablas, relaciones, índices y consult
     - [jupyter](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter)
         - [Limpieza de datos](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter/Limpieza%20de%20datos)
         - [Creación base de datos](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Base%20de%20datos.ipynb)
-        - [Querys](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Base%20de%20datos.ipynb)
+        - [Querys](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Querys.ipynb)
 - [imagen](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/imagen)
 
 
@@ -30,6 +30,8 @@ Este proyecto abordará la definición de tablas, relaciones, índices y consult
 El objetivo principal de la creación de esta base de datos y su posterior análisis, es demostrar si es rentable reabrir un videoclub. Para ello necesitaremos:
 
 Determinar el día que mas se alquilan películas.
+
+Localizar cuál es la película mas alquilada.
 
 Definir cuál es la categoría de películas que mas se suelen alquilar.
 
@@ -54,5 +56,12 @@ Realicé la creación de la base de datos en sql desde python, para ello efectu�
 
 Posteriormente ejecutamos la string de conexión para ir cargando los diferentes cvs, convertidos en dataframe, como tablas en mi base de datos 'movies'. Todo los códigos se encuentran descritos en el jupyter notebook 'base de datos'
 
+[![Captura-de-pantalla-2023-10-30-a-la-s-6-03-35-p-m.png](https://i.postimg.cc/SxhVWN2F/Captura-de-pantalla-2023-10-30-a-la-s-6-03-35-p-m.png)](https://postimg.cc/zVxnNNF0)
 
 ## Conclusión
+Una vez realizadas las querys (descritas en el jupyter notebook 'querys') podemos concluir que:
+
+- El día que mas se rentan películas es el sábado.
+- La película mas rentada según los registros, es BOOGIE AMELIE
+- La clasificación de películas mas rentada es PG-13, con supervisión de los padres para menores de 13 años.
+- La categoría de películas que mas registros de alquileres tiene, es la de Documentary con 28 registros, seguida de Drama con 23 registros.
