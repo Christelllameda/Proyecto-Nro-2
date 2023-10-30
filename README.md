@@ -22,6 +22,7 @@ Este proyecto abordará la definición de tablas, relaciones, índices y consult
     - [jupyter](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter)
         - [Limpieza de datos](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/src/jupyter/Limpieza%20de%20datos)
         - [Creación base de datos](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Base%20de%20datos.ipynb)
+        - [Querys](https://github.com/Christelllameda/Proyecto-Nro-2/blob/main/src/jupyter/Base%20de%20datos.ipynb)
 - [imagen](https://github.com/Christelllameda/Proyecto-Nro-2/tree/main/imagen)
 
 
