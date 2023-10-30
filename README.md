@@ -65,3 +65,4 @@ Una vez realizadas las querys (descritas en el jupyter notebook 'querys') podemo
 - La película mas rentada según los registros, es BOOGIE AMELIE
 - La clasificación de películas mas rentada es PG-13, con supervisión de los padres para menores de 13 años.
 - La categoría de películas que mas registros de alquileres tiene, es la de Documentary con 28 registros, seguida de Drama con 23 registros.
+- El total de dinero obtenido por rentas de películas los sábados, fue de 458,28$.
